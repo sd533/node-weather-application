@@ -1,0 +1,90 @@
+body{
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(/img/damiano-baschiera-d4feocYfzAM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+#foot-element{
+    color: rgb(80, 205, 255);
+    mix-blend-mode: difference;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 1px solid #888888;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+#head-element{
+    color: rgb(80, 205, 255);
+    mix-blend-mode: difference;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a{
+    color: rgb(80, 205, 255);
+    mix-blend-mode: difference;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+#portrait{
+    width: 250px;
+    isolation: isolate;
+    border-radius: 25%;
+}
+
+div p{
+    color: rgb(80, 205, 255);
+    mix-blend-mode: difference;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input,
+.submit {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 15px;
+    -webkit-appearance: none;
+    mix-blend-mode: difference;
+}
+
+.input {
+    border: 1px solid lightgray;
+    font-family: 'Montserrat', sans-serif;
+    width: 400px;
+}
+
+.submit {
+    background-color: rgb(80, 205, 255);
+    border: 1px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: rgb(83, 0, 79);
+}
+
+.main-content-result{
+    border: 1px solid transparent;
+    border-radius: 30px;
+    width: 548px;
+    font-weight: bold;
+    margin-top: 10%;
+}

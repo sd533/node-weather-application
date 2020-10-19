@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="/css/style.css">
+    <link rel="icon" href="/img/weather.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <title>weather</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <form>
+            <input class="input" type="text" placeholder="put your address here..">
+            <button class="submit">weather</button>
+        </form>
+        <div class="main-content-result">
+            <div class="main-content-box">
+                <p id="message-a"></p>
+                <p id="message-b"></p>
+                <p id="message-c"></p>
+                <p id="message-d"></p>
+                <p id="message-e"></p>
+                <p id="message-f"></p>
+                <p id="message-g"></p>
+                <p id="message-h"></p>
+            </div>  
+        </div>
+    </div>
+    {{>footer}}
+
+    <script type="text/javascript" src="/js/app.js"></script>
+</body>
+</html>
