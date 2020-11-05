@@ -38,18 +38,21 @@ weatherForm.addEventListener('submit',(e)=>{
             else{
                 console.log(data);
                 clearContent('#message-a');
-                bg.style.backgroundImage="url('/img/weather-bg.jpg')";
+                // bg.style.backgroundImage="url('/img/weather-bg.jpg')";
+                bg.style.backgroundColor= '#ccc';
+                bg.style.padding= '16px';
+                bg.style.boxShadow = '2px 4px 4px rgba(255,255,255,0.3)';
+        
                 bg.style.backgroundRepeat="no-repeat";
                 bg.style.backgroundSize="600px";
                 bg_box.style.margin="0 auto";
                 bg_box.style.padding="0 16px";
-                message_second.textContent='LOCATION: '+data.Location;
-                message_third.textContent='LATITUDE: '+data.Latitude+'  '+'LONGITUDE: '+data.Longitude;
-                message_fourth.textContent='TEMPERATURE: '+data.Temperature+'℃';
-                message_fifth.textContent='PRESSURE: '+data.Pressure+' '+'hpa';
-                message_sixth.textContent='HUMIDITY: '+data.Humidity+' '+'%';
-                message_seventh.textContent='WIND: '+data.Wind+' '+'m/s';
-                message_eigth.textContent='CLOUD: '+data.Cloud+' '+'%';
+                message_second.innerHTML = `<span class="sp"><i class="fas fa-map-marker-alt"></i></span><span class='result-bar1'>&nbsp;${data.Location}</span>`;
+                message_fourth.innerHTML=`<span class="sp"><i class="fas fa-temperature-low"></i></span><span class='result-bar1'>&nbsp;${data.Temperature}℃</span>`;
+                message_fifth.innerHTML=`<span class="sp"><i class="fas fa-compress-arrows-alt"></i></span><span class='result-bar1'>&nbsp;${data.Pressure} hpa</span>`;
+                message_sixth.innerHTML=`<span class="sp"><img src="img/humidity1.png"/></span><span class='result-bar1'>&nbsp;${data.Humidity} %</span>`;
+                message_seventh.innerHTML=`<span class="sp"><i class="fas fa-wind"></i></span><span class='result-bar1'>&nbsp;${data.Wind} m/s</span>`;
+                message_eigth.innerHTML=`<span class="sp"><i class="fas fa-cloud"></i></span><span class='result-bar1'>&nbsp;${data.Cloud} %</span>`;
             }
         });
     });

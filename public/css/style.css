@@ -6,8 +6,9 @@ body{
     flex-direction: column;
     min-height: 100vh;
     background-size: cover;
+    background-image:linear-gradient(to top, #011e23, transparent), url('../img/nature_bg.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 0% 60%;
 }
 
 .main-content{
@@ -15,22 +16,20 @@ body{
 }
 
 #foot-element{
-    color: rgb(80, 205, 255);
-    mix-blend-mode: difference;
+    color: #ccc;
     font-family: 'Montserrat', sans-serif;
     border-top: 1px solid #888888;
     margin-top: 16px;
     padding: 16px 0;
-    background-image: linear-gradient(to right, #07689f, #fff);
 }
 
 #head-element{
-    color: rgb(80, 205, 255);
-    mix-blend-mode: difference;
     font-family: 'Montserrat', sans-serif;
     margin-top: 16px;
     margin-bottom: 48px;
-    background-color: #a2d5f2;
+    letter-spacing: 4px;
+    color: #011e23;
+    text-shadow: 2px 4px 4px rgba(0,0,0,0.3);
 }
 
 h1{
@@ -39,8 +38,7 @@ h1{
 }
 
 header a{
-    color: rgb(80, 205, 255);
-    mix-blend-mode: difference;
+    color: black;
     font-family: 'Montserrat', sans-serif;
     margin-right: 16px;
     text-decoration: none;
@@ -53,9 +51,23 @@ header a{
 }
 
 div p{
-    color: rgb(80, 205, 255);
-    mix-blend-mode: difference;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+}
+div p span {
+    display: inline-block;
+    border-radius: 8px;
+    margin-right: 8px;
+    background-color: #888888;
+    padding: 8px 8px;
+    height: 20px;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.3);
+}
+.sp {
+    padding-top: 8px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
 }
 
 .input,
@@ -65,21 +77,37 @@ div p{
     font-size: 20px;
     border-radius: 15px;
     -webkit-appearance: none;
-    mix-blend-mode: difference;
 }
+
 
 .input {
     border: 1px solid lightgray;
     font-family: 'Montserrat', sans-serif;
-    width: 400px;
+    width: 410px;
+    background-color: #efe4e4;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.5);
+}
+.input:focus {
+    outline: none;
 }
 
 .submit {
-    background-color: rgb(80, 205, 255);
+    background-color: #ccc;
+    letter-spacing: 2px;
     border: 1px solid transparent;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    color: rgb(83, 0, 79);
+    font-weight: 600;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+}
+button:hover {
+    transform: translateY(-2px);
+}
+button:active {
+    transform: translateY(-1px);
+}
+button:focus{
+    outline: none;
 }
 
 .main-content-result{
@@ -88,4 +116,7 @@ div p{
     width: 548px;
     font-weight: bold;
     margin-top: 10%;
+}
+.result-bar1 {
+    background-color: #e3f0ff;
 }
