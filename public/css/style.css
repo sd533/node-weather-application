@@ -5,7 +5,6 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(/img/damiano-baschiera-d4feocYfzAM-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -22,6 +21,7 @@ body{
     border-top: 1px solid #888888;
     margin-top: 16px;
     padding: 16px 0;
+    background-image: linear-gradient(to right, #07689f, #fff);
 }
 
 #head-element{
@@ -30,6 +30,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin-top: 16px;
     margin-bottom: 48px;
+    background-color: #a2d5f2;
 }
 
 h1{
