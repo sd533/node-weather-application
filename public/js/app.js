@@ -45,11 +45,11 @@ weatherForm.addEventListener('submit',(e)=>{
                 bg_box.style.padding="0 16px";
                 message_second.textContent='LOCATION: '+data.Location;
                 message_third.textContent='LATITUDE: '+data.Latitude+'  '+'LONGITUDE: '+data.Longitude;
-                message_fourth.textContent='TEMPERATURE: '+data.Temperature;
-                message_fifth.textContent='PRESSURE: '+data.Pressure;
-                message_sixth.textContent='HUMIDITY: '+data.Humidity;
-                message_seventh.textContent='WIND: '+data.Wind;
-                message_eigth.textContent='CLOUD: '+data.Cloud;
+                message_fourth.textContent='TEMPERATURE: '+data.Temperature+'&degC';
+                message_fifth.textContent='PRESSURE: '+data.Pressure+' '+'hpa';
+                message_sixth.textContent='HUMIDITY: '+data.Humidity+' '+'%';
+                message_seventh.textContent='WIND: '+data.Wind+' '+'m/s';
+                message_eigth.textContent='CLOUD: '+data.Cloud+' '+'%';
             }
         });
     });
